@@ -32,17 +32,14 @@ export default function Menu() {
     }
 
     return (
-        <Navbar expand="lg" className="bg-body-tertiary">
+        <Navbar expand="lg" className="bg-body-tertiary justify-content-center">
             <Container>
-                <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                <Navbar.Brand href="#home">SILUX</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to="/"> Inicio </Nav.Link>
-                     
-                     
-                     
-                        
+                        <Nav.Link as={Link} to="/Productolista"> Productos </Nav.Link>
                         {
                             (is_logueado)
                             ?
