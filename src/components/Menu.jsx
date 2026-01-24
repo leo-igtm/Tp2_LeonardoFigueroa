@@ -32,7 +32,7 @@ export default function Menu() {
     }
 
     return (
-        <Navbar expand="lg" className="bg-body-tertiary justify-content-center">
+        <Navbar expand="lg" className="bg-body-tertiary mb-4 shadow-sm ">
             <Container>
                 <Navbar.Brand href="#home">SILUX</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />

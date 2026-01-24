@@ -11,6 +11,7 @@ import Dashboard from '@pages/Dashboard';
 import Error404 from '@pages/Error404';
 
 import Menu from '@components/Menu';
+import Productolista from '@components/Productolista';
 
 export default function App() {
 
@@ -22,6 +23,7 @@ export default function App() {
           <Routes>
             <Route path='/' element={<Inicio />} />
             <Route path='/login' element={<Login />} />
+            <Route path='/Productolista' element={<Productolista />} />
             <Route path='/dashboard' element={
               <ProtectedRoute>
                 <Dashboard />

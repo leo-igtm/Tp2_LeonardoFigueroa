@@ -8,7 +8,7 @@ export default function Inicio() {
     <Carousel fade>
       <Carousel.Item>
         <picture>
-          <source srcSet={heroOne} type="image/webp" />
+          <source srcSet={heroOne} type="image/webp/1080px920" />
           <img
             className="d-block w-100"
             src={heroOne}
@@ -23,7 +23,7 @@ export default function Inicio() {
       </Carousel.Item>
       <Carousel.Item>
         <picture>
-          <source srcSet={heroTwo} type="image/webp" />
+          <source srcSet={heroTwo} type="image/webp/1080px920" />
           <img
             className="d-block w-100"
             src={heroTwo}
@@ -38,7 +38,7 @@ export default function Inicio() {
       </Carousel.Item>
       <Carousel.Item>
         <picture>
-          <source srcSet={heroThree} type="image/avif" />
+          <source srcSet={heroThree} type="image/avif/1080px920" />
           <img
             className="d-block w-100"
             src={heroThree}
