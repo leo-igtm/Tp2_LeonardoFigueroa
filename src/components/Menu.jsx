@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 // import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '@context/AuthContext';
+import { useTheme } from '@context/ThemeContext';
 import { Button } from 'react-bootstrap';
 
 /*
@@ -23,6 +24,7 @@ function SubMenu(p_is_logueado){
 export default function Menu() {
 
     const {is_logueado, logout} = useAuth();
+    const { theme, toggleTheme } = useTheme();
     const navigate = useNavigate();
 
     const handleLogout = (e) => {
@@ -49,7 +51,15 @@ export default function Menu() {
                                 </>
                             :
                                 <Nav.Link as={Link} to="/login"> Login </Nav.Link>
-                        }                                                
+                        }
+                        <Button 
+                            onClick={toggleTheme} 
+                            variant='outline-secondary' 
+                            type='button'
+                            className="ms-2"
+                        >
+                            {theme === 'light' ? '🌙 Oscuro' : '☀️ Claro'}
+                        </Button>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
