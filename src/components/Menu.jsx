@@ -39,7 +39,7 @@ export default function Menu() {
                 <Navbar.Brand href="#home">SILUX</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
+                    <Nav className="ms-auto">
                         <Nav.Link as={Link} to="/"> Inicio </Nav.Link>
                         <Nav.Link as={Link} to="/Productolista"> Productos </Nav.Link>
                         {
@@ -50,15 +50,16 @@ export default function Menu() {
                                     <Button onClick={handleLogout} variant='danger' type='button'> Cerrar sesión </Button>
                                 </>
                             :
-                                <Nav.Link as={Link} to="/login"> Login </Nav.Link>
+                                <Nav.Link as={Link} to="/login"> Ingresa </Nav.Link>
                         }
                         <Button 
                             onClick={toggleTheme} 
                             variant='outline-secondary' 
+                            size='sm'
                             type='button'
                             className="ms-2"
                         >
-                            {theme === 'light' ? '🌙 Oscuro' : '☀️ Claro'}
+                            {theme === 'light' ? '🌙' : '☀️'}
                         </Button>
                     </Nav>
                 </Navbar.Collapse>

@@ -15,31 +15,36 @@ import Error404 from '@pages/Error404';
 import Menu from '@components/Menu';
 import Footer from '@components/Footer';
 import Productolista from '@components/Productolista';
+import { useEffect } from 'react';
 
 function AppContent() {
   const { theme } = useTheme();
 
+  // Aplicar tema al documento
+  useEffect(() => {
+    document.documentElement.setAttribute('data-bs-theme', theme);
+    document.body.setAttribute('data-bs-theme', theme);
+  }, [theme]);
+
   return (
-    <div data-bs-theme={theme}>
-      <BrowserRouter>
-        <Menu />
-        <Container>
-          <Routes>
-            <Route path='/' element={<Inicio />} />
-            <Route path='/login' element={<Login />} />
-            <Route path='/registro' element={<Registro />} />
-            <Route path='/Productolista' element={<Productolista />} />
-            <Route path='/dashboard' element={
-              <ProtectedRoute>
-                <Dashboard />
-              </ProtectedRoute>
-            } />
-            <Route path="*" element={<Error404 />} />
-          </Routes>
-        </Container>
-        <Footer />
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Menu />
+      <Container>
+        <Routes>
+          <Route path='/' element={<Inicio />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/registro' element={<Registro />} />
+          <Route path='/Productolista' element={<Productolista />} />
+          <Route path='/dashboard' element={
+            <ProtectedRoute>
+              <Dashboard />
+            </ProtectedRoute>
+          } />
+          <Route path="*" element={<Error404 />} />
+        </Routes>
+      </Container>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
