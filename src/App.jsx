@@ -1,6 +1,4 @@
 import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from 'react-bootstrap/Container';
 import  AuthProvider  from '@context/AuthContext';
 import ThemeProvider, { useTheme } from '@context/ThemeContext';
 import ProtectedRoute from '@context/ProtectedRoute';
@@ -22,14 +20,14 @@ function AppContent() {
 
   // Aplicar tema al documento
   useEffect(() => {
-    document.documentElement.setAttribute('data-bs-theme', theme);
-    document.body.setAttribute('data-bs-theme', theme);
+    document.documentElement.setAttribute('data-theme', theme);
+    document.body.setAttribute('data-theme', theme);
   }, [theme]);
 
   return (
     <BrowserRouter>
       <Menu />
-      <Container>
+      <main className="mx-auto min-h-[70vh] max-w-6xl px-4 py-6 text-slate-900 dark:text-slate-100">
         <Routes>
           <Route path='/' element={<Inicio />} />
           <Route path='/login' element={<Login />} />
@@ -42,7 +40,7 @@ function AppContent() {
           } />
           <Route path="*" element={<Error404 />} />
         </Routes>
-      </Container>
+      </main>
       <Footer />
     </BrowserRouter>
   );

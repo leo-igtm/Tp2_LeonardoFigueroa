@@ -1,6 +1,3 @@
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 import img1 from '../assets/images 1.webp';
 import img2 from '../assets/images 2.webp';
 import img3 from '../assets/images 3.webp';
@@ -19,24 +16,22 @@ function Productolista() {
   ];
 
   return (
-    <Row xs={1} sm={2} md={4} className="g-4">
+    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
       {productos.map((p, idx) => (
-        <Col key={idx}>
-          <Card className="h-100">
-            <Card.Img
-              variant="top"
-              src={p.src}
-              alt={p.alt}
-              loading="lazy"
-            />
-            <Card.Body>
-              <Card.Title>{p.titulo}</Card.Title>
-              <Card.Text>{p.texto}</Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
+        <article key={idx} className="overflow-hidden rounded-2xl bg-white shadow-sm dark:bg-slate-900 dark:shadow-slate-900/20">
+          <img
+            className="h-40 w-full object-cover"
+            src={p.src}
+            alt={p.alt}
+            loading="lazy"
+          />
+          <div className="p-4">
+            <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">{p.titulo}</h3>
+            <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">{p.texto}</p>
+          </div>
+        </article>
       ))}
-    </Row>
+    </div>
   );
 }
 

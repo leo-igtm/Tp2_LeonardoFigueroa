@@ -11,6 +11,14 @@ export default function ThemeProvider({ children }) {
         setTheme(temaGuardado);
     }, []);
 
+    useEffect(() => {
+        if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    }, [theme]);
+
     const toggleTheme = () => {
         const nuevoTema = theme === 'light' ? 'dark' : 'light';
         setTheme(nuevoTema);
