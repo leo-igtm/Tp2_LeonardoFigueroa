@@ -1,0 +1,111 @@
+{
+    "tienda": "Ray-Ban Official Retailer",
+    "categoria": "Eyewear",
+    "ultima_actualizacion": "2024-05-22",
+    "productos": [
+      {
+        "id": "RB2140-901",
+        "nombre": "Original Wayfarer Classic",
+        "tipo": "Sol",
+        "estilo": "Icónico/Retro",
+        "material_montura": "Acetato",
+        "color_montura": "Negro Brillante",
+        "material_lente": "Cristal",
+        "color_lente": "Verde G-15",
+        "caracteristicas": ["Protección UV 100%", "Bisagras de 7 pines"],
+        "precio": {
+          "monto": 163.00,
+          "moneda": "USD"
+        },
+        "url_imagen_referencia": "https://example.com/images/rb2140-901.jpg"
+      },
+      {
+        "id": "RB3016-W0365",
+        "nombre": "Clubmaster Classic",
+        "tipo": "Sol",
+        "estilo": "Retro/Intelectual",
+        "material_montura": "Acetato y Metal",
+        "color_montura": "Negro y Dorado",
+        "material_lente": "Cristal",
+        "color_lente": "Verde G-15",
+        "caracteristicas": ["Semimontura", "Almohadillas ajustables"],
+        "precio": {
+          "monto": 163.00,
+          "moneda": "USD"
+        },
+        "url_imagen_referencia": "https://example.com/images/rb3016-w0365.jpg"
+      },
+      {
+        "id": "RB3025-L0205",
+        "nombre": "Aviator Classic",
+        "tipo": "Sol",
+        "estilo": "Piloto/Atemporal",
+        "material_montura": "Metal",
+        "color_montura": "Arista (Dorado)",
+        "material_lente": "Cristal",
+        "color_lente": "Verde G-15",
+        "caracteristicas": ["Doble puente", "Lentes polarizados opcionales"],
+        "precio": {
+          "monto": 163.00,
+          "moneda": "USD"
+        },
+        "url_imagen_referencia": "https://example.com/images/rb3025-l0205.jpg"
+      },
+      {
+        "id": "RX5154-2000",
+        "nombre": "Clubmaster Optics",
+        "tipo": "Vista",
+        "estilo": "Retro/Intelectual",
+        "material_montura": "Acetato y Metal",
+        "color_montura": "Negro Brillante",
+        "material_lente": "Lente de demostración (Demo Lens)",
+        "color_lente": "Transparente",
+        "caracteristicas": ["Apto para lentes recetados", "Estructura clásica"],
+        "precio": {
+          "monto": 178.00,
+          "moneda": "USD"
+        },
+        "url_imagen_referencia": "https://example.com/images/rx5154-2000.jpg"
+      },
+      {
+        "id": "RX6489-2500",
+        "nombre": "Aviator Optics",
+        "tipo": "Vista",
+        "estilo": "Piloto/Minimalista",
+        "material_montura": "Metal",
+        "color_montura": "Arista (Dorado)",
+        "material_lente": "Lente de demostración (Demo Lens)",
+        "color_lente": "Transparente",
+        "caracteristicas": ["Ligeras", "Apto para lentes recetados progresivos"],
+        "precio": {
+          "monto": 168.00,
+          "moneda": "USD"
+        },
+        "url_imagen_referencia": "https://example.com/images/rx6489-2500.jpg"
+      }
+    ],
+    "accesorios": [
+      {
+        "id": "AC-CASE-BRN",
+        "nombre": "Estuche Rígido de Cuero",
+        "color": "Marrón",
+        "material": "Cuero Sintético",
+        "compatibilidad": "Mayoría de modelos de Sol y Vista",
+        "precio": {
+          "monto": 25.00,
+          "moneda": "USD"
+        }
+      },
+      {
+        "id": "AC-CLOTH-RED",
+        "nombre": "Paño de Limpieza de Microfibra",
+        "color": "Gris con logo Rojo",
+        "material": "Microfibra",
+        "caracteristicas": ["Antiestático", "Suave"],
+        "precio": {
+          "monto": 10.00,
+          "moneda": "USD"
+        }
+      }
+    ]
+  }

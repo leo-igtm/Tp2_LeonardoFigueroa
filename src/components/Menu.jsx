@@ -44,6 +44,9 @@ export default function Menu() {
                     <Link className="text-sm font-medium text-slate-700 hover:text-slate-900 dark:text-slate-200 dark:hover:text-white" to="/Productolista">
                         Productos
                     </Link>
+                    <Link className="text-sm font-medium text-slate-700 hover:text-slate-900 dark:text-slate-200 dark:hover:text-white" to="/Productoitem">
+                        Secciones 
+                    </Link>                          
                     {is_logueado ? (
                         <>
                             <Link className="text-sm font-medium text-slate-700 hover:text-slate-900 dark:text-slate-200 dark:hover:text-white" to="/dashboard">
