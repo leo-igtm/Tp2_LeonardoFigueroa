@@ -17,7 +17,7 @@
           "monto": 163.00,
           "moneda": "USD"
         },
-        "url_imagen_referencia": "https://example.com/images/rb2140-901.jpg"
+        "url_imagen_referencia": "images 1.webp"
       },
       {
         "id": "RB3016-W0365",
@@ -33,7 +33,7 @@
           "monto": 163.00,
           "moneda": "USD"
         },
-        "url_imagen_referencia": "https://example.com/images/rb3016-w0365.jpg"
+        "url_imagen_referencia": "images 2.webp"
       },
       {
         "id": "RB3025-L0205",
@@ -49,7 +49,7 @@
           "monto": 163.00,
           "moneda": "USD"
         },
-        "url_imagen_referencia": "https://example.com/images/rb3025-l0205.jpg"
+        "url_imagen_referencia": "images 3.webp"
       },
       {
         "id": "RX5154-2000",
@@ -65,7 +65,7 @@
           "monto": 178.00,
           "moneda": "USD"
         },
-        "url_imagen_referencia": "https://example.com/images/rx5154-2000.jpg"
+        "url_imagen_referencia": "images 1.webp"
       },
       {
         "id": "RX6489-2500",
@@ -81,7 +81,7 @@
           "monto": 168.00,
           "moneda": "USD"
         },
-        "url_imagen_referencia": "https://example.com/images/rx6489-2500.jpg"
+        "url_imagen_referencia": "images 2.webp"
       }
     ],
     "accesorios": [

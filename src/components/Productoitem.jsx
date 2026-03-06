@@ -1,17 +1,26 @@
 import img1 from '../assets/images 1.webp';
 import img2 from '../assets/images 2.webp';
 import img3 from '../assets/images 3.webp';
+import data from '../Mocks/Productos.json';
 
-export const productos = [
-  { src: img1, alt: 'Producto 1', titulo: 'Producto 1', texto: 'Descripción breve del producto 1.' },
-  { src: img2, alt: 'Producto 2', titulo: 'Producto 2', texto: 'Descripción breve del producto 2.' },
-  { src: img3, alt: 'Producto 3', titulo: 'Producto 3', texto: 'Descripción breve del producto 3.' },
-  { src: img1, alt: 'Producto 4', titulo: 'Producto 4', texto: 'Descripción breve del producto 4.' },
-  { src: img2, alt: 'Producto 2', titulo: 'Producto 2', texto: 'Descripción breve del producto 2.' },
-  { src: img3, alt: 'Producto 3', titulo: 'Producto 3', texto: 'Descripción breve del producto 3.' },
-  { src: img1, alt: 'Producto 1', titulo: 'Producto 1', texto: 'Descripción breve del producto 1.' },
-  { src: img2, alt: 'Producto 2', titulo: 'Producto 2', texto: 'Descripción breve del producto 2.' },
-];
+const imageMap = {
+  'images 1.webp': img1,
+  'images 2.webp': img2,
+  'images 3.webp': img3,
+};
+
+export const productos = data.productos.map((p) => {
+  const src = imageMap[p.url_imagen_referencia];
+  if (!src && import.meta.env.DEV) {
+    console.warn(`[Productoitem] No se encontró imagen para "${p.url_imagen_referencia}" (id: ${p.id})`);
+  }
+  return {
+    src: src || img1,
+    alt: p.nombre,
+    titulo: p.nombre,
+    texto: `${p.estilo || ''} — ${p.color_montura || ''} / ${p.color_lente || ''}`.trim(),
+  };
+});
 
 function ProductoItem({ producto }) {
   return (
