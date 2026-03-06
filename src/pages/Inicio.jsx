@@ -1,26 +1,26 @@
 import { useEffect, useMemo, useState } from 'react';
 import Productolista from '@components/Productolista';
-import heroOne from '../assets/images 1.webp';
-import heroTwo from '../assets/images 2.webp';
-import heroThree from '../assets/images 3.webp';
+import heroOne from '../assets/wayfere classic.webp';
+import heroTwo from '../assets/Clubmaster Classic.jpg';
+import heroThree from '../assets/aviator optics.jpg';
 
 export default function Inicio() {
   const slides = useMemo(
     () => [
       {
         src: heroOne,
-        title: 'Menú de temporada',
-        text: 'Ingredientes frescos y locales cada semana.',
+        title: 'Original Wayfarer Classic',
+        text: 'Estilo icónico retro en acetato negro brillante con lentes de cristal verde G-15.',
       },
       {
         src: heroTwo,
-        title: 'Platos favoritos',
-        text: 'Sabores clásicos con un giro moderno.',
+        title: 'Clubmaster Classic',
+        text: 'Estilo retro-intelectual con montura de acetato y metal, lentes verde G-15.',
       },
       {
         src: heroThree,
-        title: 'Postres artesanales',
-        text: 'Dulces ligeros para cerrar la experiencia.',
+        title: 'Aviator Classic',
+        text: 'Estilo piloto atemporal en metal dorado con lentes de cristal verde G-15.',
       },
     ],
     []
@@ -96,20 +96,20 @@ export default function Inicio() {
 
       <section className="mx-auto grid max-w-6xl gap-6 px-4 py-10 md:grid-cols-2">
         <div className="overflow-hidden rounded-2xl bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:bg-slate-900 dark:shadow-slate-900/20">
-          <img className="h-56 w-full object-cover" src={heroTwo} alt="Plato principal" loading="lazy" />
+          <img className="h-56 w-full object-cover" src={heroTwo} alt="Clubmaster Classic" loading="lazy" />
           <div className="p-5">
-            <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100">Platos favoritos</h3>
+            <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100">Clubmaster Classic</h3>
             <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
-              Sabores clásicos con un giro moderno.
+              Estilo retro-intelectual con montura de acetato y metal.
             </p>
           </div>
         </div>
         <div className="overflow-hidden rounded-2xl bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:bg-slate-900 dark:shadow-slate-900/20">
-          <img className="h-56 w-full object-cover" src={heroThree} alt="Postre artesanal" loading="lazy" />
+          <img className="h-56 w-full object-cover" src={heroThree} alt="Aviator Classic" loading="lazy" />
           <div className="p-5">
-            <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100">Postres artesanales</h3>
+            <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100">Aviator Classic</h3>
             <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
-              Dulces ligeros para cerrar la experiencia.
+              Estilo piloto atemporal en metal dorado con lentes verde G-15.
             </p>
           </div>
         </div>

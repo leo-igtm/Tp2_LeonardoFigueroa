@@ -1,16 +1,13 @@
-import img1 from '../assets/images 1.webp';
-import img2 from '../assets/images 2.webp';
-import img3 from '../assets/images 3.webp';
+import wayfarer from '../assets/wayfere classic.webp';
+import clubmaster from '../assets/Clubmaster Classic.jpg';
+import aviator from '../assets/aviator optics.jpg';
 
 export const productos = [
-  { src: img1, alt: 'Producto 1', titulo: 'Producto 1', texto: 'Descripción breve del producto 1.' },
-  { src: img2, alt: 'Producto 2', titulo: 'Producto 2', texto: 'Descripción breve del producto 2.' },
-  { src: img3, alt: 'Producto 3', titulo: 'Producto 3', texto: 'Descripción breve del producto 3.' },
-  { src: img1, alt: 'Producto 4', titulo: 'Producto 4', texto: 'Descripción breve del producto 4.' },
-  { src: img2, alt: 'Producto 2', titulo: 'Producto 2', texto: 'Descripción breve del producto 2.' },
-  { src: img3, alt: 'Producto 3', titulo: 'Producto 3', texto: 'Descripción breve del producto 3.' },
-  { src: img1, alt: 'Producto 1', titulo: 'Producto 1', texto: 'Descripción breve del producto 1.' },
-  { src: img2, alt: 'Producto 2', titulo: 'Producto 2', texto: 'Descripción breve del producto 2.' },
+  { src: wayfarer, alt: 'Original Wayfarer Classic', titulo: 'Original Wayfarer Classic', texto: 'Estilo icónico retro en acetato negro brillante con lentes de cristal verde G-15.' },
+  { src: clubmaster, alt: 'Clubmaster Classic', titulo: 'Clubmaster Classic', texto: 'Estilo retro-intelectual con montura de acetato y metal, lentes verde G-15.' },
+  { src: aviator, alt: 'Aviator Classic', titulo: 'Aviator Classic', texto: 'Estilo piloto atemporal en metal dorado con lentes de cristal verde G-15.' },
+  { src: clubmaster, alt: 'Clubmaster Optics', titulo: 'Clubmaster Optics', texto: 'Estructura clásica apta para lentes recetados, montura negro brillante.' },
+  { src: aviator, alt: 'Aviator Optics', titulo: 'Aviator Optics', texto: 'Montura ligera en metal dorado, apta para lentes recetados progresivos.' },
 ];
 
 function ProductoItem({ producto }) {
